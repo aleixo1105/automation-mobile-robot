@@ -21,8 +21,6 @@ automation-mobile-robot/
 │   ├── variables/
 │   │   └── variables.robot
 │   └── data_generator.py
-├── scripts/
-│   └── login_tests.robot
 ├── baixar_criar_emulador.txt
 └── README.md
 
