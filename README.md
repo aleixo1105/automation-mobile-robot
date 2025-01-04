@@ -84,6 +84,9 @@ appium
 
 ```bash
 robot -d results tests/
+robot --outputdir resultados/ tests/      #Para Gerar os relatorio na pasta
+#No Diretorio Resultados abra o arquivo report.html em qualquer navegador 
+
 ```
 
 Os resultados serão gerados na pasta `results` com relatórios detalhados.
