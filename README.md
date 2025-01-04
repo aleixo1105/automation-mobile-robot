@@ -45,12 +45,27 @@ O projeto de automação utiliza as seguintes ferramentas e bibliotecas:
 
 ## Configuração do Ambiente
 
-1. Instale os seguintes componentes:
-    - [Python](https://www.python.org/)
-    - [Robot Framework](https://robotframework.org/)
-    - [Appium](http://appium.io/)
-    - [Android SDK](https://developer.android.com/studio)
-    - [Faker](https://faker.readthedocs.io/en/master/): Biblioteca Python utilizada para gerar dados fictícios, como nomes, emails, telefones, entre outros.
+1. Dispositivos utilizados:
+
+   Devices Virtualizaods no Android Stdudio:
+   - Nome:** Pixel4API33
+   - Dispositivo:** Pixel 4
+   - API Level:** 33 (Android 13)
+   - Tipo de API:** Google APIs
+   - Resolução de Tela:** 1080 x 2280
+   - Tamanho de RAM:** 2048 MB
+   - Armazenamento Interno:** 16 GB
+
+   Devices Fisicos:
+    - Samsung Galaxy S20 FE   (Android 14)
+    - Samsung Galaxy A50      (Android 11) 
+
+2. Configuração do Emulador
+   - [Python](https://www.python.org/)
+   - [Robot Framework](https://robotframework.org/)
+   - [Appium](http://appium.io/)
+   - [Android SDK](https://developer.android.com/studio)
+   - [Faker](https://faker.readthedocs.io/en/master/)
 
 2. Configure o Appium:
     - Certifique-se de que o Appium está configurado e funcionando no `http://127.0.0.1:4723/wd/hub`.
@@ -84,8 +99,8 @@ appium
 
 ```bash
 robot -d results tests/
-robot --outputdir resultados/ tests/      #Para Gerar os relatorio na pasta
-#No Diretorio Resultados abra o arquivo report.html em qualquer navegador 
+robot --outputdir resultados/ tests/      #Para Gerar os relatorio na pasta #No Diretorio Resultados abra o arquivo report.html em qualquer navegador 
+
 
 ```
 
