@@ -1,0 +1,7 @@
+
+pip install robotframework-appiumlibrary
+
+npm install -g appium
+
+
+pip install robotframework-imagehorizonlibrary
