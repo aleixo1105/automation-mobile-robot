@@ -93,7 +93,7 @@ Os resultados serão gerados na pasta `results` com relatórios detalhados.
 
 ### Casos de Testes:
 
-### Criar novo usyario 
+### Criar novo usuario 
     Abrir App
     Login - Clicar Registar Conta
     Register - Validar Tela
