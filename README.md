@@ -21,6 +21,9 @@ automation-mobile-robot/
 │   ├── variables/
 │   │   └── variables.robot
 │   └── data_generator.py
+├── scripts/
+│   └── login_tests.robot
+├── baixar_criar_emulador.txt
 └── README.md
 
 ```
@@ -60,17 +63,16 @@ O projeto de automação utiliza as seguintes ferramentas e bibliotecas:
     - Samsung Galaxy S20 FE   (Android 14)
     - Samsung Galaxy A50      (Android 11) 
 
-2. Configuração do Emulador
-   - [Python](https://www.python.org/)
-   - [Robot Framework](https://robotframework.org/)
-   - [Appium](http://appium.io/)
-   - [Android SDK](https://developer.android.com/studio)
-   - [Faker](https://faker.readthedocs.io/en/master/)
+2. Download e criação do Emulador Pixel4 API-33 (Conforme o requisito)
 
-2. Configure o Appium:
-    - Certifique-se de que o Appium está configurado e funcionando no `http://127.0.0.1:4723/wd/hub`.
+   - Execute os comandos listados no arquivo baixar_criar_emulador.txt:
+         sdkmanager "system-images;android-33;google_apis;x86_64"  
+         avdmanager create avd -n Pixel4API33 -k "system-images;android-33;google_apis;x86_64" -d "pixel_4"
 
-3. Configure as variáveis no arquivo `resources/Variables.robot`:
+3. Configure o Appium:
+   - Certifique-se de que o Appium está configurado e funcionando no `http://127.0.0.1:4723/wd/hub`.
+
+4. Configure as variáveis no arquivo `resources/Variables.robot`:
 
 ```robot
 *** Variables ***
@@ -80,12 +82,14 @@ ${APP_PACKAGE}      com.example.vamsi.login
 ${APP_ACTIVITY}     .MainActivity
 ```
 
-4. Configure o caminho do Android SDK no sistema operacional:
+5. Configure o caminho do Android SDK no sistema operacional:
 
 - Adicione o caminho do SDK à variável de ambiente `PATH`.
 - Certifique-se de que o comando `adb` está funcionando no terminal.
 
 ## Executando os Testes
+
+**Pré-requisito:** Certifique-se de que o emulador ou dispositivo físico está configurado e conectado antes de executar os testes.
 
 1. Inicie o servidor Appium:
 

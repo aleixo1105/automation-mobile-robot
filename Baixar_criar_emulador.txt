@@ -1,0 +1,8 @@
+#Passo a passo para baixar, criar o emulado
+
+1- Baixar imagem do sistema Android 33 com Google APIs
+sdkmanager "system-images;android-33;google_apis;x86_64"
+
+2- Criar o emulador com a imagem baixada
+avdmanager create avd -n Pixel4API33 -k "system-images;android-33;google_apis;x86_64" -d "pixel_4"
+
