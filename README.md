@@ -141,4 +141,9 @@ Os resultados serão gerados na pasta `results` com relatórios detalhados.
 
 
 
+Gravações dos testes realizados:
+- Emulado(Pixel 4 API 33 - Android 13)
+[automation-robot_mobile_emulator_recorde.zip](https://github.com/user-attachments/files/18308929/automation-robot_mobile_emulator_recorde.zip)
 
+- Dispositivo Fisico (Samsung Galaxy S20FE - Android 14)
+[automation_robot_mobile_samsung_recorder.zip](https://github.com/user-attachments/files/18308931/automation_robot_mobile_samsung_recorder.zip)
